@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,18 +55,27 @@
       <workItem from="1585053261540" duration="3443000" />
       <workItem from="1585098369239" duration="82000" />
       <workItem from="1585129090301" duration="4677000" />
-      <workItem from="1585301009712" duration="37000" />
+      <workItem from="1585301009712" duration="438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/PokeBattle" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="578" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585054279223">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="578" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.982@0.23.1680.982" timestamp="1585054279223" />
+    <state x="902" y="360" key="FileChooserDialogImpl" timestamp="1585301105459">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="902" y="360" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1440.900@0.0.1920.1080" timestamp="1585301105459" />
     <state x="527" y="247" key="NewPhpClassDialog" timestamp="1585054286063">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
@@ -76,9 +86,10 @@
     <state x="2433" y="2" key="NewPhpFileDialog/0.23.1680.1027/1680.-432.1920.1012@1680.-432.1920.1012" timestamp="1585133465694" />
     <state x="2433" y="21" key="NewPhpFileDialog/0.23.1680.982/1680.-432.1920.1057@1680.-432.1920.1057" timestamp="1585135058599" />
     <state x="659" y="444" key="NewPhpFileDialog/0.23.1680.982@0.23.1680.982" timestamp="1585054235169" />
-    <state x="2303" y="-177" key="SettingsEditor" timestamp="1585134352083">
-      <screen x="1680" y="-432" width="1920" height="1057" />
+    <state x="623" y="261" key="SettingsEditor" timestamp="1585301111954">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="623" y="261" key="SettingsEditor/0.0.1920.1080/1920.0.1440.900@0.0.1920.1080" timestamp="1585301111954" />
     <state x="2303" y="-177" key="SettingsEditor/0.23.1680.982/1680.-432.1920.1057@1680.-432.1920.1057" timestamp="1585134352083" />
     <state x="545" y="260" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1585053955478" />
     <state x="2323" y="-178" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1585135016125">
