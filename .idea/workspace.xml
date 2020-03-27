@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Attacks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EnergyType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pikachu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resistance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Weakness.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Charmeleon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +52,7 @@
       <updated>1585053260320</updated>
       <workItem from="1585053261540" duration="3443000" />
       <workItem from="1585098369239" duration="82000" />
-      <workItem from="1585129090301" duration="4677000" />
+      <workItem from="1585129090301" duration="8216000" />
     </task>
     <servers />
   </component>
@@ -65,6 +60,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2181" y="-404" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585144026640">
+      <screen x="1680" y="-432" width="1920" height="1057" />
+    </state>
+    <state x="2181" y="-404" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.982/1680.-432.1920.1057@1680.-432.1920.1057" timestamp="1585144026640" />
     <state x="578" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585054279223">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
@@ -73,11 +72,11 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="527" y="247" key="NewPhpClassDialog/0.23.1680.982@0.23.1680.982" timestamp="1585054286063" />
-    <state x="2433" y="21" key="NewPhpFileDialog" timestamp="1585135058599">
+    <state x="2433" y="21" key="NewPhpFileDialog" timestamp="1585141303633">
       <screen x="1680" y="-432" width="1920" height="1057" />
     </state>
     <state x="2433" y="2" key="NewPhpFileDialog/0.23.1680.1027/1680.-432.1920.1012@1680.-432.1920.1012" timestamp="1585133465694" />
-    <state x="2433" y="21" key="NewPhpFileDialog/0.23.1680.982/1680.-432.1920.1057@1680.-432.1920.1057" timestamp="1585135058599" />
+    <state x="2433" y="21" key="NewPhpFileDialog/0.23.1680.982/1680.-432.1920.1057@1680.-432.1920.1057" timestamp="1585141303633" />
     <state x="659" y="444" key="NewPhpFileDialog/0.23.1680.982@0.23.1680.982" timestamp="1585054235169" />
     <state x="2303" y="-177" key="SettingsEditor" timestamp="1585134352083">
       <screen x="1680" y="-432" width="1920" height="1057" />
