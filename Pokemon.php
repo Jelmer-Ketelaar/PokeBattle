@@ -19,6 +19,9 @@ class Pokemon
         $this->Attacks = $Attacks;
         $this->Weakness = $Weakness;
         $this->Resistance = $Resistance;
+
+        Statistics::addPokemon();
+        Statistics::deletePokemon();
     }
 
     public function __toString()
