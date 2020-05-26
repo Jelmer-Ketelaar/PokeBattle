@@ -1,5 +1,6 @@
 body {
     font-family: 'Balsamiq Sans', cursive;
+    margin-top: 2vh;
 }
 
 .col-sm-2 {
@@ -7,11 +8,11 @@ body {
 }
 
 .information-charmeleon {
-    margin-top: 11vh;
+    margin-top: 6vh;
 }
 
 .information-pikachu {
-    margin-top: 11vh;
+    margin-top: 6vh;
 }
 
 .Title {
