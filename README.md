@@ -1,29 +1,48 @@
 # Object Oriented Programming (OOP)
+# Casus / inhoud van de opdracht
+In deze opdracht ga je Pokemon classes modelleren.
 
-## Assessment criteria specific:
+Maak voor elke class die je aanmaakt een eigen bestand aan.
 
-### Learning objectives to be achieved:
-* You understand the OOP concepts below
-* You can apply the OOP concepts below during application design
-* You can apply the OOP concepts below in a suitable programming language during the realization of an application
+Als je de opdracht in PHP gaat schrijven, maak dan tevens een index.php waarin je de werking van de objecten gaat demonstreren aan de hand van de functionele beschrijving. Gebruik de 'LAB - OOP - Superheroes' als voorbeeld.
 
-### OOP Concepts:
-* Objects & Classes
-* Methods & Properties
-* Constructors
-* Naming conventions
-* Encapsulation
-* Visibility & Access modifiers
-* Getter & Setters
-* Abstraction (design)
-* Inheritance
-* Static
-* Autoloading & Namespacing
+Let op: je mag alleen plain code gebruiken in je uitwerking! Dus geen externe libraries of frameworks.
 
-## That would mean:
-* You show at least one application, developed in accordance with all OOP concepts. (to apply)
-* You can explain how you designed (described or drawn) the application in a coherent collection of classes and working objects. (to apply)
-* You can explain the goals and responsibilities of the different classes and their objects. (to apply)
-* You can explain the purpose and benefits of the individual OOP concepts. (understanding)
-* You can explain how the OOP concepts can be technically implemented (syntax) in a specific programming language. (understanding)
-* You can make an extension of a class or explain it technically during an on-site assessment. (to apply)
+
+### Functionele beschrijving:
+* Pokemon
+* Heeft een naam
+* Heeft een EnergyType
+* Heeft hitpoints (maximum health)
+* Heeft health die bij de geboorte gelijk is aan de waarde van de hitpoints
+* Heeft 1 of meerdere Attacks
+* Heeft een Weakness
+* Heeft een Resistance
+* Kan een andere Pokemon aanvallen met een Attack
+    * De schade van een Attack wordt vermenigvuldigd met de multiplier van de Weakness indien de EnergyType van de Weakness gelijk is aan de EnergyType van de aanvallende Pokemon
+    * De schade van een Attack wordt verminderd met de waarde van de Resistance indien de EnergyType van de Resistance gelijk is aan de EnergyType van de aanvallende Pokemon
+* Kan schade krijgen van een andere Pokemon als resultaat van een Attack
+    * De totale schade van een Attack wordt verminderd op de health van de Pokemon die wordt aangevallen
+* EnergyType
+    * Heeft een naam/type  
+* Attack
+    * Heeft een naam
+    * doet schade (in hitpoints)
+* Weakness
+    * Heeft een EnergyType
+    * Heeft een multiplier (vermenigvuldiger)
+* Resistace
+    * Heeft een EnergyType
+    * Heeft een waarde
+* Pikachu is een Pokemon
+    * Heeft een zelf te verzinnen naam
+    * Is van het Energytype "Lightning"
+    * Heeft 60 hitpoints
+    * Heeft 2 attacks
+        * Electric Ring doet 50 schade
+        * Pika Punch doet 20 schade
+    * Heeft een weakness
+        * EnergyType "Fire" met een multiplier van 1,5
+    
+    
+    
