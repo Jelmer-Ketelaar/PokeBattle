@@ -1,0 +1,34 @@
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.col-sm-2 {
+    background-color: orange;
+}
+
+.information-charmeleon {
+    margin-top: 11vh;
+}
+
+.information-pikachu {
+    margin-top: 11vh;
+}
+
+.Title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Pikachu {
+    height: 50vh;
+}
+
+.Charmeleon {
+    height: 50vh;
+}
+
+.cont {
+    margin-top: 10vh;
+    margin-left: 12vw;
+
+}
