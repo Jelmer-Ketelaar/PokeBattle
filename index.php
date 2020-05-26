@@ -7,6 +7,7 @@ require "EnergyType.php";
 require "Attacks.php";
 require "Weakness.php";
 require "Resistance.php";
+require "Statistics.php";
 
 $Pikachu = new Pikachu('Pikachu');
 $Charmeleon = new Charmeleon('Charmeleon');
@@ -53,7 +54,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 </p>
 
                 <p>
-                    HP: <?php echo $Charmeleon->Health . '/' . $Charmeleon->Hitpoints; ?>
+                    HP: <?php echo $Charmeleon->Health -40 . '/' . $Charmeleon->Hitpoints; ?>
                 </p>
 
                 <p>
@@ -91,7 +92,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 </p>
 
                 <p>
-                    HP: <?php echo $Pikachu->Health . '/' . $Pikachu->Hitpoints; ?>
+                    HP: <?php echo $Pikachu->Health -30  . '/' . $Pikachu->Hitpoints; ?>
                 </p>
 
                 <p>
@@ -107,9 +108,13 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 //The attacks of the first pokemon
                 foreach ($Pikachu->Attacks as $attack) {
                     ?>
-                    <p><?php echo $attack->getName(); ?></p>
+                    <p>
+                        <?php echo $attack->getName(); ?>
+                    </p>
                     <?php
                 }
+
+
                 ?>
 
 
