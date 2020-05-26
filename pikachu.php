@@ -2,6 +2,8 @@
 
 class Pikachu extends Pokemon
 {
+    public $attacks;
+
     public function __construct($Name)
     {
         $EnergyType = new EnergyType('Lightning');
@@ -16,5 +18,9 @@ class Pikachu extends Pokemon
 
         parent::__construct($Name, $EnergyType, $Hitpoints, $Health, $Attacks, $Weakness, $Resistance);
 
+    }
+
+    public function attackPokemon(Charmeleon $Charmeleon, $attacks)
+    {
     }
 }
