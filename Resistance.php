@@ -9,5 +9,10 @@
             $this->EnergyType = $EnergyType;
             $this->Value = $Value;
         }
+
+        public function getResistanceType()
+        {
+            return $this->EnergyType;
+        }
     }
 
