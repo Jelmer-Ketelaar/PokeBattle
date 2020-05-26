@@ -2,10 +2,20 @@
 
 class EnergyType
 {
-    public $Name;
+    public $name;
+    const Fire = 'Fire';
+    const Water = 'Water';
+    const Lightning = 'Lighting';
+    const Fighting = 'Fighting';
 
-    public function __construct($Name)
+
+    public function __construct($name)
     {
-        $this->Name = $Name;
+        $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
     }
 }
