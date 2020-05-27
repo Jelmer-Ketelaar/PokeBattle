@@ -17,6 +17,7 @@ class Attacks
     {
         $this->Hitpoints = $this->Hitpoints * $multiplier;
     }
+
     //If the resistance energy type is equal to the energy type of the attacking pokemon, the damage - resistance is done.
     public function reduceDamage($resistance)
     {

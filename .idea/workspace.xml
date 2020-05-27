@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Statistics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Attacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Charmeleon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Charmeleon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weakness.php" beforeDir="false" afterPath="$PROJECT_DIR$/Weakness.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +90,7 @@
       <workItem from="1585053261540" duration="3443000" />
       <workItem from="1585098369239" duration="82000" />
       <workItem from="1585129090301" duration="8216000" />
-      <workItem from="1590480495584" duration="19097000" />
+      <workItem from="1590480495584" duration="20001000" />
     </task>
     <servers />
   </component>
@@ -111,6 +112,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="906" y="398" key="#Inspections" timestamp="1590526927208">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="906" y="398" key="#Inspections/-1920.218.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1590526927208" />
     <state x="1024" y="522" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590495913393">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
