@@ -12,7 +12,7 @@ class Attacks
         $this->Hitpoints = $Hitpoints;
     }
 
-    //If the weakness enerytpe is equal to the energy type of the attacking pokemon, the damage x the multiplier is done.
+    //If the weakness energytpe is equal to the energy type of the attacking pokemon, the damage x the multiplier is done.
     public function multiplyDamage($multiplier)
     {
         $this->Hitpoints = $this->Hitpoints * $multiplier;
