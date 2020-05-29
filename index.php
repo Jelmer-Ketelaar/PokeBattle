@@ -29,17 +29,16 @@ $Charmeleon = new Charmeleon('Charmeleon');
 <body>
 <h1 class="Title">Pokemon</h1>
 <div class="cont">
+
     <!-- Pikachu attacks Charmeleon with Electric Ring -->
-    <p class="lead text-danger"> <?php $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Electric Ring']); ?></p>
+    <p> <?php $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Electric Ring']); ?></p>
 
 
     <!-- Charmeleon attacks Pikachu with Flare -->
-    <p class="lead text-warning pl-5"> <?php $Charmeleon->attackPokemon($Pikachu, $Charmeleon->Attacks['Flare']); ?></p>
+    <p> <?php $Charmeleon->attackPokemon($Pikachu, $Charmeleon->Attacks['Flare']); ?></p>
 </div>
 
-
 <!-- All info of Charmender -->
-
 <div class="row">
     <div class="col-sm-2 text-center">
         <h3 class="text-center information-charmeleon">Information</h3>
@@ -120,8 +119,6 @@ $Charmeleon = new Charmeleon('Charmeleon');
 
 
     </div>
-</div>
-</div>
 </div>
 
 </body>
