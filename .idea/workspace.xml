@@ -21,14 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Charmeleon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Charmeleon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnergyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/EnergyType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resistance.php" beforeDir="false" afterPath="$PROJECT_DIR$/Resistance.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Statistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weakness.php" beforeDir="false" afterPath="$PROJECT_DIR$/Weakness.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pikachu.php" beforeDir="false" afterPath="$PROJECT_DIR$/pikachu.php" afterDir="false" />
     </list>
@@ -102,7 +99,7 @@
       <workItem from="1590567721669" duration="1888000" />
       <workItem from="1590739363416" duration="382000" />
       <workItem from="1614691356979" duration="2776000" />
-      <workItem from="1614694372857" duration="5626000" />
+      <workItem from="1614694372857" duration="5721000" />
     </task>
     <servers />
   </component>
