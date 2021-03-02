@@ -24,11 +24,13 @@ class Attacks
         $this->Hitpoints = $this->Hitpoints - $resistance;
     }
 
+    //Return name
     public function getName()
     {
         return $this->Name;
     }
 
+    //Return Hitpoints
     public function getDamage()
     {
         return $this->Hitpoints;
