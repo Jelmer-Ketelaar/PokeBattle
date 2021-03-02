@@ -3,25 +3,26 @@
 class Pokemon
 {
     public $Name;
-    public $EnergyType;
+    public $energyType;
     public $Hitpoints;
     public $Health;
     public $Attacks;
     public $Weakness;
     public $Resistance;
 
-    public function __construct($Name, $EnergyType, $Hitpoints, $Health, $Attacks, $Weakness, $Resistance)
+
+    protected function __construct($Name, $energyType, $Hitpoints, $Health, $Attacks, $Weakness, $Resistance)
     {
         $this->Name = $Name;
-        $this->EnergyType = $EnergyType;
+        $this->energyType = $energyType;
         $this->Hitpoints = $Hitpoints;
         $this->Health = $Health;
         $this->Attacks = $Attacks;
         $this->Weakness = $Weakness;
         $this->Resistance = $Resistance;
 
-        Statistics::addPokemon();
-        Statistics::deletePokemon();
+        statistics::addPokemon();
+        statistics::deletePokemon();
     }
 
     public function __toString()
