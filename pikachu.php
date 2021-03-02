@@ -1,11 +1,9 @@
 <?php
 
-class Pikachu extends Pokemon
-{
+class Pikachu extends Pokemon {
     public $attacks;
 
-    public function __construct($Name)
-    {
+    public function __construct($Name) {
         $EnergyType = new EnergyType('Lightning');
         $Hitpoints = 60;
         $Health = $Hitpoints;
@@ -20,7 +18,6 @@ class Pikachu extends Pokemon
 
     }
 
-    public function attackPokemon(Charmeleon $Charmeleon, $attacks)
-    {
+    public function attackPokemon(Charmeleon $Charmeleon, $attacks) {
     }
 }
