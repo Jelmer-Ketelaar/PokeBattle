@@ -1,10 +1,11 @@
-body {
+* {
     font-family: 'Balsamiq Sans', cursive;
     margin-top: 2vh;
 }
 
 .col-sm-2 {
     background-color: orange;
+    border-radius: 10px;
 }
 
 .information-charmeleon {
@@ -13,6 +14,7 @@ body {
 
 .information-pikachu {
     margin-top: 6vh;
+
 }
 
 .Title {
@@ -36,4 +38,27 @@ body {
 
 .row {
     margin-left: 12vw;
+}
+
+.Attack {
+    display: block;
+    text-align: center;
+    margin-left: 1vw;
+    width: 11.5vw;
+    margin-top: 3vh;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.attackCharmeleon {
+    /*Placement for attack text*/
+    display: block;
+    text-align: center;
+    margin-left: 1vw;
+    width: 11vw;
+    margin-top: 3vh;
+
+    /*Font*/
+    font-weight: bolder;
+    font-size: larger;
 }
