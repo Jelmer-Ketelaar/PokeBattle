@@ -1,7 +1,6 @@
 <?php
 
-
-class Statistics
+class statistics
 {
     /**
      * @var int
