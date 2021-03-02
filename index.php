@@ -1,13 +1,6 @@
 <?php
 //Laad alle bestanden in
-require "Pokemon.php";
-require "Pikachu.php";
-require "Charmeleon.php";
-require "EnergyType.php";
-require "Attacks.php";
-require "Weakness.php";
-require "Resistance.php";
-require "Statistics.php";
+require "require/requireClasses.php";
 
 $Pikachu = new Pikachu('Pikachu');
 $Charmeleon = new Charmeleon('Charmeleon');
@@ -28,15 +21,6 @@ $Charmeleon = new Charmeleon('Charmeleon');
 
 <body>
 <h1 class="Title">Pokemon</h1>
-<div class="cont">
-
-    <!-- Pikachu attacks Charmeleon with Electric Ring -->
-    <p> <?php $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Electric Ring']); ?></p>
-
-
-    <!-- Charmeleon attacks Pikachu with Flare -->
-    <p> <?php $Charmeleon->attackPokemon($Pikachu, $Charmeleon->Attacks['Flare']); ?></p>
-</div>
 
 <!-- All info of Charmender -->
 <div class="row">
@@ -48,11 +32,11 @@ $Charmeleon = new Charmeleon('Charmeleon');
         </p>
 
         <p>
-            EnergyType: <?php echo $Charmeleon->EnergyType->getName(); ?>
+            EnergyType: <?php echo $Charmeleon->energyType->getName(); ?>
         </p>
 
         <p>
-            HP: <?php echo $Charmeleon->Health - 40 . '/' . $Charmeleon->Hitpoints; ?>
+            HP: <?php echo $Charmeleon->Health . '/' . $Charmeleon->Hitpoints; ?>
         </p>
 
         <p>
@@ -68,17 +52,36 @@ $Charmeleon = new Charmeleon('Charmeleon');
         //The attacks of the first pokemon
         foreach ($Charmeleon->Attacks as $attack) {
             ?>
-            <p><?php echo $attack->getName(); ?></p>
+            <p>
+                <?php echo $attack->getName(); ?>
+            </p>
             <?php
         }
         ?>
+
+        <!-- Pikachu attacks Charmeleon with Electric Ring -->
+        <div class="Attack">
+            <p>
+                Pikachu valt Charmeleon aan met Electric Ring. Dit doet 40 damage
+                <?php
+                /* Maakt nieuwe objecten aan */
+                $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Electric Ring']); ?> </p>
+            <p>
+                HP Left: <?php echo $Charmeleon->Health - 40 . '/' . $Charmeleon->Hitpoints; ?>
+            </p>
+        </div>
     </div>
+
+
+    <!-- Charmeleon attacks Pikachu with Flare -->
 
 
     <div>
         <img class="Charmeleon " src="img/pokemon-2.jpg" alt="Charmeleon">
         <img class="Pikachu" src="img/pokemon-1.png" alt="Pikachu">
     </div>
+
+
     <!-- All info of Pikachu -->
     <div class="col-sm-2 text-center">
         <h3 class="text-center information-pikachu">Information</h3>
@@ -88,11 +91,11 @@ $Charmeleon = new Charmeleon('Charmeleon');
         </p>
 
         <p>
-            EnergyType: <?php echo $Pikachu->EnergyType->getName(); ?>
+            EnergyType: <?php echo $Pikachu->energyType->getName(); ?>
         </p>
 
         <p>
-            HP: <?php echo $Pikachu->Health - 30 . '/' . $Pikachu->Hitpoints; ?>
+            HP: <?php echo $Pikachu->Health . '/' . $Pikachu->Hitpoints; ?>
         </p>
 
         <p>
@@ -113,11 +116,18 @@ $Charmeleon = new Charmeleon('Charmeleon');
             </p>
             <?php
         }
-
-
         ?>
-
-
+        <div class="attackCharmeleon">
+            <p>
+                Charmeleon valt Pikachu aan met Fire. Dit doet 20 damage
+                <?php
+                /* Maakt nieuwe objecten aan */
+                $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Fire']); ?>
+            </p>
+            <p>
+                HP Left: <?php echo $Pikachu->Health - 30 . '/' . $Pikachu->Hitpoints; ?>
+            </p>
+        </div>
     </div>
 </div>
 
