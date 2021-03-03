@@ -2,6 +2,8 @@
 
 class Pokemon
 {
+    //Creating the properties
+    private static $livingPokemons;
     public $Name;
     public $energyType;
     public $hitPoints;
