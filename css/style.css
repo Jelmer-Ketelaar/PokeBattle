@@ -2,63 +2,39 @@
     font-family: 'Balsamiq Sans', cursive;
     margin-top: 2vh;
 }
-
-.col-sm-2 {
+.col-3 {
     background-color: orange;
     border-radius: 10px;
 }
 
-.information-charmeleon {
-    margin-top: 6vh;
+#Charmeleon {
+    height: 85vh;
 }
 
-.information-pikachu {
-    margin-top: 6vh;
+#Pikachu {
+    margin-left: 10vh;
+}
 
+
+.infoTitle {
+    margin-top: 3vh;
 }
 
 .Title {
     text-align: center;
-    font-size: 50px;
-}
-
-.Pikachu {
-    height: 50vh;
-}
-
-.Charmeleon {
-    height: 50vh;
-}
-
-.cont {
-    margin-top: 10vh;
-    margin-left: 12vw;
-
+    max-font-size: 50px;
 }
 
 .row {
-    margin-left: 12vw;
+    margin-left: 2vw;
+}
+/*Image*/
+
+.Pikachu {
+    max-height: 50vh;
 }
 
-.Attack {
-    display: block;
-    text-align: center;
-    margin-left: 1vw;
-    width: 11.5vw;
-    margin-top: 3vh;
-    font-weight: bolder;
-    font-size: larger;
+.Charmeleon {
+    max-height: 50vh;
 }
 
-.attackCharmeleon {
-    /*Placement for attack text*/
-    display: block;
-    text-align: center;
-    margin-left: 1vw;
-    width: 11vw;
-    margin-top: 3vh;
-
-    /*Font*/
-    font-weight: bolder;
-    font-size: larger;
-}
