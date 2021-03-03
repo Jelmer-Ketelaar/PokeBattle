@@ -7,4 +7,3 @@ require "EnergyType.php";
 require "Attacks.php";
 require "Weakness.php";
 require "Resistance.php";
-require "Statistics.php";
