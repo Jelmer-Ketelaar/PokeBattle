@@ -8,16 +8,22 @@
 }
 
 #Charmeleon {
-    height: 85vh;
+    height: 70vh;
 }
 
-#Pikachu {
-    margin-left: 10vh;
-}
 
+
+p {
+    font-size: 17px;
+}
 
 .infoTitle {
     margin-top: 3vh;
+}
+
+.information {
+    display: block;
+    top: 10vh;
 }
 
 .Title {
