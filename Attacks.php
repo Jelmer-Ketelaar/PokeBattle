@@ -4,36 +4,36 @@
 class Attacks
 {
     public $Name;
-    public $Hitpoints;
+    public $hitPoints;
 
-    public function __construct($Name, $Hitpoints)
+    public function __construct($Name, $hitPoints)
     {
         $this->Name = $Name;
-        $this->Hitpoints = $Hitpoints;
+        $this->hitPoints = $hitPoints;
     }
 
     //If the weakness energytpe is equal to the energy type of the attacking pokemon, the damage x the multiplier is done.
     public function multiplyDamage($multiplier)
     {
-        $this->Hitpoints = $this->Hitpoints * $multiplier;
+        $this->Hitpoints = $this->hitPoints * $multiplier;
     }
 
     //If the resistance energy type is equal to the energy type of the attacking pokemon, the damage - resistance is done.
     public function reduceDamage($resistance)
     {
-        $this->Hitpoints = $this->Hitpoints - $resistance;
+        $this->Hitpoints = $this->hitPoints - $resistance;
     }
 
     //Return name
-    public function getName()
+    public function getAttackName()
     {
         return $this->Name;
     }
 
     //Return Hitpoints
-    public function getDamage()
+    public function getAttackDamage()
     {
-        return $this->Hitpoints;
+        return $this->hitPoints;
     }
 
 }

@@ -1,23 +1,30 @@
 <?php
 
-class Pikachu extends Pokemon {
-    public $attacks;
+class Pikachu extends Pokemon
+{
+    /** Constructor wordt uitgevoerd als er een nieuwe Pikachu class word aangemaakt.
+     * @param string $name
+     */
+    public function __construct($name)
+    {
+        $energyType = new EnergyType('Lightning');
+        $hitpoints = 60;
+        $attacks = array(
+            'Electric Ring' => new Attacks('Electric Ring', 50),
+            'Pika Punch' => new Attacks('Pika Punch', 20)
+        );
 
-    public function __construct($Name) {
-        $EnergyType = new EnergyType('Lightning');
-        $Hitpoints = 60;
-        $Health = $Hitpoints;
-        $Attacks = [
-            new Attacks("Electric Ring", 50),
-            new Attacks("Pika Punch", 20)
-        ];
-        $Weakness = new Weakness("Fire", 1.5);
-        $Resistance = new Resistance("Fighting", 20);
-
-        parent::__construct($Name, $EnergyType, $Hitpoints, $Health, $Attacks, $Weakness, $Resistance);
-
-    }
-
-    public function attackPokemon(Charmeleon $Charmeleon, $attacks) {
+        $weakness = new Weakness('Fire', 1.5);
+        $resistance = new Resistance('Fighting', 20);
+        /**
+         * Constructor die gebruikt wordt om een Pokemon object aan te maken.
+         * @param string $name
+         * @param string $energyType
+         * @param int $hitpoints
+         * @param mixed $attacks
+         * @param mixed $weakness
+         * @param mixed $resistance
+         */
+        parent::__construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance);
     }
 }

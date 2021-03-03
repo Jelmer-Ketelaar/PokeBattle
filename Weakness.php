@@ -2,21 +2,28 @@
 
 class Weakness
 {
-    public $energyType;
-    public $multiplier;
-
-    public function __construct($energyType, $multiplier)
+    private $name;
+    private $multiplier;
+    /** Constructor wordt uitgevoerd als er een nieuw object wordt aangemaakt
+     * @param string $name
+     * @param int $multiplier
+     */
+    public function __construct($name, $multiplier)
     {
-        $this->energyType = $energyType;
+        $this->name = $name;
         $this->multiplier = $multiplier;
     }
-
+    /** Pakt de naam van de energy type
+     * @return string $name
+     */
     public function getWeaknessType()
     {
-        return $this->energyType;
+        return $this->name;
     }
-
-    public function getWeaknessMultiplier()
+    /** Pakt de value van de energy type die gebruikt wordt als multiplier
+     * @return int $multiplier
+     */
+    public function getRecistanceValue()
     {
         return $this->multiplier;
     }

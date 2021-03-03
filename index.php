@@ -2,6 +2,7 @@
 //Laad alle bestanden in
 require "require/requireClasses.php";
 
+//Objecten van een class
 $Pikachu = new Pikachu('Pikachu');
 $Charmeleon = new Charmeleon('Charmeleon');
 ?>
@@ -21,70 +22,65 @@ $Charmeleon = new Charmeleon('Charmeleon');
 
 <body>
 <h1 class="Title">Pokemon</h1>
-
+<div class="Attack">
+    <?php
+    /* Uses the class Pokemon in the Pokemon namespace */
+    /* Shows how much pokemons are still alive with the getPopulation function in the Pokemon class */
+    //    echo '<br>Op dit moment zijn er ' . Pokemon::getPopulation() . ' Pokemons levend.';
+    ?>
+</div>
 <!-- All info of Charmender -->
 <div class="row">
-    <div class="col-sm-2 text-center">
-        <h3 class="text-center information-charmeleon">Information</h3>
+    <div class="col-3" id="Charmeleon">
+        <h3 class="infoTitle">Information</h3>
 
+        <!-- Here it writes the name of charmeleon on the page -->
         <p>
             Name: <?php echo $Charmeleon->Name; ?>
         </p>
-
+        <!-- Here it writes the name of the energytype on the page -->
         <p>
             EnergyType: <?php echo $Charmeleon->energyType->getName(); ?>
         </p>
-
+        <!-- Here it writes the total HP of charmeleon on the page -->
         <p>
-            HP: <?php echo $Charmeleon->Health . '/' . $Charmeleon->Hitpoints; ?>
+            HP: <?php echo $Charmeleon->health . '/' . $Charmeleon->hitPoints; ?>
         </p>
-
+        <!-- Here it writes the name of charmeleon on the page -->
         <p>
             Weakness: <?php echo $Charmeleon->Weakness->getWeaknessType(); ?>
         </p>
 
         <p>
-            Resistance: <?php echo $Charmeleon->Resistance->getResistanceType(); ?>
+            Resistance: <?php echo $Charmeleon->Resistance->getRecistanceValue(); ?>
         </p>
         <br>
-        <h3 class="text-center">Attacks:</h3>
+        <h3>Attacks:</h3>
         <?php
         //The attacks of the first pokemon
         foreach ($Charmeleon->Attacks as $attack) {
             ?>
             <p>
-                <?php echo $attack->getName(); ?>
+                <?php echo $attack->getAttackName(); ?>
             </p>
             <?php
         }
         ?>
+        <h3 style="margin-top: 5vh">Fight:</h3>
+        <?php
+        $Charmeleon->battleTurn($Pikachu, $Charmeleon->Attacks['Flare']);
+        ?>
 
-        <!-- Pikachu attacks Charmeleon with Electric Ring -->
-        <div class="Attack">
-            <p>
-                Pikachu valt Charmeleon aan met Electric Ring. Dit doet 40 damage
-                <?php
-                /* Maakt nieuwe objecten aan */
-                $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Electric Ring']); ?> </p>
-            <p>
-                HP Left: <?php echo $Charmeleon->Health - 40 . '/' . $Charmeleon->Hitpoints; ?>
-            </p>
-        </div>
     </div>
 
-
-    <!-- Charmeleon attacks Pikachu with Flare -->
-
-
+    <!-- Images -->
     <div>
         <img class="Charmeleon " src="img/pokemon-2.jpg" alt="Charmeleon">
         <img class="Pikachu" src="img/pokemon-1.png" alt="Pikachu">
     </div>
-
-
     <!-- All info of Pikachu -->
-    <div class="col-sm-2 text-center">
-        <h3 class="text-center information-pikachu">Information</h3>
+    <div class="col-3" id="Pikachu">
+        <h3 class="infoTitle">Information</h3>
 
         <p>
             Name: <?php echo $Pikachu->Name; ?>
@@ -95,7 +91,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
         </p>
 
         <p>
-            HP: <?php echo $Pikachu->Health . '/' . $Pikachu->Hitpoints; ?>
+            HP: <?php echo $Pikachu->health . '/' . $Pikachu->hitPoints; ?>
         </p>
 
         <p>
@@ -103,31 +99,23 @@ $Charmeleon = new Charmeleon('Charmeleon');
         </p>
 
         <p>
-            Resistance: <?php echo $Pikachu->Resistance->getResistanceType(); ?>
+            Resistance: <?php echo $Pikachu->Resistance->getRecistanceValue(); ?>
         </p>
         <br>
-        <h3 class="text-center">Attacks:</h3>
+        <h3>Attacks:</h3>
         <?php
         //The attacks of the second pokemon
         foreach ($Pikachu->Attacks as $attack) {
             ?>
             <p>
-                <?php echo $attack->getName(); ?>
+                <?php echo $attack->getAttackName(); ?>
             </p>
             <?php
-        }
+        } ?>
+        <h3 style="margin-top: 5vh">Fight:</h3>
+        <?php
+        $Charmeleon->battleTurn($Pikachu, $Charmeleon->Attacks['Flare']);
         ?>
-        <div class="attackCharmeleon">
-            <p>
-                Charmeleon valt Pikachu aan met Fire. Dit doet 20 damage
-                <?php
-                /* Maakt nieuwe objecten aan */
-                $Pikachu->attackPokemon($Charmeleon, $Pikachu->attacks['Fire']); ?>
-            </p>
-            <p>
-                HP Left: <?php echo $Pikachu->Health - 30 . '/' . $Pikachu->Hitpoints; ?>
-            </p>
-        </div>
     </div>
 </div>
 

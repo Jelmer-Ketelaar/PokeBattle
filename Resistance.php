@@ -2,23 +2,30 @@
 
 class Resistance
 {
-    public $EnergyType;
-    public $reducedDamage;
-
-    public function __construct($EnergyType, $Value)
+    private $name;
+    private $value;
+    /** Constructor wordt uitgevoerd als er een nieuw object wordt aangemaakt
+     * @param string $name
+     * @param int $value
+     */
+    public function __construct($name, $value)
     {
-        $this->EnergyType = $EnergyType;
-        $this->reducedDamage = $Value;
+        $this->name = $name;
+        $this->value = $value;
     }
-
-    public function getResistanceType()
+    /** Pakt de naam van de energy type
+     * @return string $name
+     */
+    public function getWeaknessType()
     {
-        return $this->EnergyType;
+        return $this->name;
     }
-
-    public function getReducedDamage()
+    /** Pakt de value van de resistance
+     * @return int $value
+     */
+    public function getRecistanceValue()
     {
-        return $this->reducedDamage;
+        return $this->value;
     }
 }
 
