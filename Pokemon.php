@@ -24,6 +24,7 @@ class Pokemon
 
     protected function __construct($Name, $energyType, $hitPoints, $Attacks, $Weakness, $Resistance)
     {
+        //Methods
         $this->Name = $Name;
         $this->energyType = $energyType;
         $this->hitPoints = $hitPoints;
@@ -50,12 +51,16 @@ class Pokemon
         $resistanceEnergyType = $target->getResistance()->getWeaknessType();
         $resistance = $target->getResistance()->getRecistanceValue();
 
+        // If the weakness matches the energy type of the attacking Pokemon, the multiplier is used.
         if ($weaknessEnergyType == $energyType) {
             $damage = $Attacks->getAttackDamage() * $multiplierEnergyType;
             echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage  <br>(" . $damage . " Damage) </br></p>";
         } // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
         elseif ($resistanceEnergyType == $energyType) {
             $damage = $Attacks->getAttackDamage() - $resistance;
+            echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
+            echo " (<p>" . $damage . " Damage)</p>";
+        } // Shows the attack with the damage that has been done.
         else {
             $damage = $Attacks->getAttackDamage();
             echo $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . " (" . $damage . " Damage)<br>";
@@ -73,10 +78,13 @@ class Pokemon
     public function damageDone($damage, $target)
     {
         // Als de HP 0 is dan wordt er een Pokemon afgehaald
+        $this->health -= $damage;
         if ($target->getHealth() <= 0) {
+            echo $target->getPokemonName() . " is dead!<br>";
             self::$livingPokemons--;
         } // Laat zien hoeveel HP er nog over is.
         else {
+            echo "<p>" . $target->getPokemonName() . " heeft nu nog " . $target->getHealth() . " hp over!</p>";
         }
     }
 
