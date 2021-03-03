@@ -2,18 +2,17 @@
 
 class EnergyType
 {
-    public $name;
-    const Fire = 'Fire';
-    const Water = 'Water';
-    const Lightning = 'Lighting';
-    const Fighting = 'Fighting';
-
-
+    private $name;
+    /** Word uitgevoerd voor elke nieuwe EnergyType
+     * @param string $name
+     */
     public function __construct($name)
     {
         $this->name = $name;
     }
-
+    /**
+     * @return string $name
+     */
     public function getName()
     {
         return $this->name;
