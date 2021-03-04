@@ -39,7 +39,7 @@ class Pokemon
 
     public function battleTurn($target, $Attacks)
     {
-        $energyType = $this->getEnergyType()->getName();
+        $energyType = $target->getEnergyType()->getName();
         $weaknessEnergyType = $target->getWeakness()->getWeaknessType();
         $multiplierEnergyType = $target->getWeakness()->getWeaknessValue();
 
@@ -128,7 +128,6 @@ class Pokemon
     {
         return $this->Attacks;
     }
-
 
     public function getAttackByName($Name)
     {
