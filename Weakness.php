@@ -23,7 +23,7 @@ class Weakness
     /** Pakt de value van de energy type die gebruikt wordt als multiplier
      * @return int $multiplier
      */
-    public function getRecistanceValue()
+    public function getWeaknessValue()
     {
         return $this->multiplier;
     }

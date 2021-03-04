@@ -52,7 +52,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
             </p>
 
             <p>
-                Resistance: <?php echo $Charmeleon->Resistance->getRecistanceValue(); ?>
+                Resistance: <?php echo $Charmeleon->Resistance->getResistanceValue(); ?>
             </p>
             <br>
             <h3>Attacks:</h3>
@@ -68,7 +68,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
             ?>
             <h3 style="margin-top: 5vh">Fight:</h3>
             <?php
-            $Pikachu->battleTurn($Charmeleon, $Pikachu->Attacks['Flare']);
+            $Pikachu->battleTurn($Charmeleon, $Pikachu->attacks['Electric Ring']);
             ?>
 
         </div>
@@ -99,7 +99,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 </p>
 
                 <p>
-                    Resistance: <?php echo $Pikachu->Resistance->getRecistanceValue(); ?>
+                    Resistance: <?php echo $Pikachu->Resistance->getResistanceValue(); ?>
                 </p>
                 <br>
                 <h3>Attacks:</h3>
@@ -114,7 +114,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 } ?>
                 <h3 style="margin-top: 5vh">Fight:</h3>
                 <?php
-                $Charmeleon->battleTurn($Pikachu, $Charmeleon->Attacks['Flare']);
+                $Charmeleon->battleTurn($Pikachu, $Charmeleon->attacks['Flare']);
                 ?>
             </div>
         </div>

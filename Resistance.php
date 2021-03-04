@@ -16,16 +16,15 @@ class Resistance
     /** Pakt de naam van de energy type
      * @return string $name
      */
-    public function getWeaknessType()
+    public function getResistanceType()
     {
         return $this->name;
     }
     /** Pakt de value van de resistance
      * @return int $value
      */
-    public function getRecistanceValue()
+    public function getResistanceValue()
     {
         return $this->value;
     }
 }
-

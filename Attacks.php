@@ -13,15 +13,15 @@ class Attacks
     }
 
     //If the weakness energytpe is equal to the energy type of the attacking pokemon, the damage x the multiplier is done.
-    public function multiplyDamage($multiplier)
+    public function multiplyDamage($Multiplier)
     {
-        $this->Hitpoints = $this->hitPoints * $multiplier;
+        $this->hitPoints = $this->hitPoints * $Multiplier;
     }
 
     //If the resistance energy type is equal to the energy type of the attacking pokemon, the damage - resistance is done.
-    public function reduceDamage($resistance)
+    public function reduceDamage($Resistance)
     {
-        $this->Hitpoints = $this->hitPoints - $resistance;
+        $this->hitPoints = $this->hitPoints - $Resistance;
     }
 
     //Return name
@@ -35,7 +35,4 @@ class Attacks
     {
         return $this->hitPoints;
     }
-
 }
-
-
