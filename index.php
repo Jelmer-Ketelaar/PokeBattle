@@ -68,7 +68,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
             ?>
             <h3 style="margin-top: 5vh">Fight:</h3>
             <?php
-            $Pikachu->battleTurn($Charmeleon, $Pikachu->attacks['Electric Ring']);
+            $Pikachu->battleTurn($Charmeleon, $Pikachu->getAttackByName('Electric Ring'));
             ?>
 
         </div>
@@ -114,7 +114,7 @@ $Charmeleon = new Charmeleon('Charmeleon');
                 } ?>
                 <h3 style="margin-top: 5vh">Fight:</h3>
                 <?php
-                $Charmeleon->battleTurn($Pikachu, $Charmeleon->attacks['Flare']);
+                $Charmeleon->battleTurn($Pikachu, $Charmeleon->getAttackByName('Flare'));
                 ?>
             </div>
         </div>
