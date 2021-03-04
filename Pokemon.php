@@ -45,18 +45,18 @@ class Pokemon
     {
 
         $energyType = $this->getEnergyType()->getName();
-        $weaknessEnergyType = $target->getWeakness()->getWeaknessType();
+        $weakness = $target->getWeakness()->getWeaknessType();
         $multiplierEnergyType = $target->getWeakness()->getRecistanceValue();
 
-        $resistanceEnergyType = $target->getResistance()->getWeaknessType();
+        $resistance = $target->getResistance()->getWeaknessType();
         $resistance = $target->getResistance()->getRecistanceValue();
 
         // If the weakness matches the energy type of the attacking Pokemon, the multiplier is used.
-        if ($weaknessEnergyType == $energyType) {
+        if ($weakness == $energyType) {
             $damage = $Attacks->getAttackDamage() * $multiplierEnergyType;
             echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage  <br>(" . $damage . " Damage) </br></p>";
         } // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
-        elseif ($resistanceEnergyType == $energyType) {
+        elseif ($resistance == $energyType) {
             $damage = $Attacks->getAttackDamage() - $resistance;
             echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " (<p>" . $damage . " Damage)</p>";
@@ -72,7 +72,7 @@ class Pokemon
     /**
      * Laat zien of de Pokemon dood is of hij laat zien hoeveel HP er nog over is.
      * @param int $damage
-     * @param string $target
+     * @param mixed $target
      */
 
     public function damageDone($damage, $target)
