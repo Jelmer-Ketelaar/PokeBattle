@@ -49,20 +49,20 @@ class Pokemon
         // If the weakness matches the energy type of the attacking Pokemon, the multiplier is used.
         if ($weaknessEnergyType == $energyType) {
             $Damage = $Attacks->getAttackDamage() * $multiplierEnergyType;
-            echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit deed  <br>" . $Damage . " Damage </br></p>";
+            echo "<p>" . $this->getPokemonByName() . " valt aan met " . $Attacks->getAttackName() . "! Dit deed  <br>" . $Damage . " Damage </br></p>";
         }
 
         // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
         elseif ($resistanceEnergyType == $energyType) {
             $Damage = $Attacks->getAttackDamage() - $Resistance;
-            echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
+            echo "<p>" . $this->getPokemonByName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " <p>" . $Damage . " Damage</p>";
         }
 
         // Shows the attack with the damage that has been done.
         else {
             $Damage = $Attacks->getAttackDamage();
-            echo $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "<p> " . $Damage . " Damage</p>";
+            echo $this->getPokemonByName() . " valt aan met " . $Attacks->getAttackName() . "<p> " . $Damage . " Damage</p>";
         }
 
         $this->damageDone($Damage, $target);
@@ -70,21 +70,23 @@ class Pokemon
 
     /**
      * Laat zien of de Pokemon dood is of hij laat zien hoeveel HP er nog over is.
-     * @param int $damage
+     * @param int $Damage
      * @param mixed $target
      */
 
-    public function damageDone($damage, $target)
+    public function damageDone($Damage, $target)
     {
         // Als de HP 0 is dan wordt er een Pokemon afgehaald
-        $target->health -= $damage;
+        $target->health -= $Damage;
         if ($target->getHealth() <= 0) {
-            echo $target->getPokemonName()  .  " Is verslagen!<br>";
+            echo $target->getPokemonByName()  .  " Is verslagen!<br>";
             self::$livingPokemons--;
+        } elseif ($target->getHealth() <= 15) {
+            echo $target->getPokemonByName() . ' heeft nu nog maar ' . $target->getHealth() . " hp over!<br>";
         }
         // Laat zien hoeveel HP er nog over is.
         else {
-            echo $target->getPokemonName() . " heeft nog " . $target->getHealth() . " hp over!<br>";
+            echo $target->getPokemonByName() . " heeft nu nog " . $target->getHealth() . " hp over!<br>";
         }
     }
 
@@ -100,7 +102,7 @@ class Pokemon
     /**
      * @return string $Name
      */
-    private function getPokemonName()
+    private function getPokemonByName()
     {
         return $this->Name;
     }
