@@ -129,6 +129,16 @@ class Pokemon
         return $this->Attacks;
     }
 
+
+    public function getAttackByName($Name)
+    {
+        foreach ($this->Attacks as $Attack) {
+            if ($Attack->Name == $Name) {
+                return $Attack;
+            }
+        }
+    }
+
     /**
      * @return mixed $Weakness
      */
