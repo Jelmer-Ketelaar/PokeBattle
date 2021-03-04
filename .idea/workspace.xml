@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Attacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Attacks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resistance.php" beforeDir="false" afterPath="$PROJECT_DIR$/Resistance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weakness.php" beforeDir="false" afterPath="$PROJECT_DIR$/Weakness.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pikachu.php" beforeDir="false" afterPath="$PROJECT_DIR$/pikachu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +49,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1ZZix6m15uPvkEbEZCTHw7BcMAO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -91,6 +87,16 @@
       <recent name="C:\Program Files\Ampps\www\School-onedrive\Jaar 2\PokeBattle\css" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Pokemon.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Pokemon.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Pokemon.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -116,6 +122,7 @@
       <workItem from="1614847973412" duration="599000" />
       <workItem from="1614850448937" duration="234000" />
       <workItem from="1614852125464" duration="389000" />
+      <workItem from="1614869211085" duration="784000" />
     </task>
     <servers />
   </component>
