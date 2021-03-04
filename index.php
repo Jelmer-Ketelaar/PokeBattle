@@ -80,43 +80,41 @@ $Charmeleon = new Charmeleon('Charmeleon');
         </div>
         <!-- All info of Pikachu -->
         <div class="col-3" id="Pikachu">
-            <div class="information">
-                <h3 style=>Information</h3>
-                <p>
-                    Name: <?php echo $Pikachu->Name; ?>
-                </p>
+            <h3 class="infoTitle">Information</h3>
+            <p>
+                Name: <?php echo $Pikachu->Name; ?>
+            </p>
 
-                <p>
-                    EnergyType: <?php echo $Pikachu->energyType->getName(); ?>
-                </p>
+            <p>
+                EnergyType: <?php echo $Pikachu->energyType->getName(); ?>
+            </p>
 
-                <p>
-                    HP: <?php echo $Pikachu->health . '/' . $Pikachu->hitPoints; ?>
-                </p>
+            <p>
+                HP: <?php echo $Pikachu->health . '/' . $Pikachu->hitPoints; ?>
+            </p>
 
-                <p>
-                    Weakness: <?php echo $Pikachu->Weakness->getWeaknessType(); ?>
-                </p>
+            <p>
+                Weakness: <?php echo $Pikachu->Weakness->getWeaknessType(); ?>
+            </p>
 
+            <p>
+                Resistance: <?php echo $Pikachu->Resistance->getResistanceValue(); ?>
+            </p>
+            <br>
+            <h3>Attacks:</h3>
+            <?php
+            //The attacks of the second pokemon
+            foreach ($Pikachu->Attacks as $attack) {
+            ?>
                 <p>
-                    Resistance: <?php echo $Pikachu->Resistance->getResistanceValue(); ?>
+                    <?php echo $attack->getAttackName(); ?>
                 </p>
-                <br>
-                <h3>Attacks:</h3>
-                <?php
-                //The attacks of the second pokemon
-                foreach ($Pikachu->Attacks as $attack) {
-                ?>
-                    <p>
-                        <?php echo $attack->getAttackName(); ?>
-                    </p>
-                <?php
-                } ?>
-                <h3 style="margin-top: 5vh">Fight:</h3>
-                <?php
-                $Charmeleon->battleTurn($Pikachu, $Charmeleon->getAttackByName('Flare'));
-                ?>
-            </div>
+            <?php
+            } ?>
+            <h3 style="margin-top: 5vh">Fight:</h3>
+            <?php
+            $Charmeleon->battleTurn($Pikachu, $Charmeleon->getAttackByName('Flare'));
+            ?>
         </div>
     </div>
 
