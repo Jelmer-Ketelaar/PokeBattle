@@ -44,16 +44,16 @@ class Pokemon
     public function battleTurn($target, $Attacks)
     {
 
-        $energyType = $this->getEnergyType()->getName();
+        $energyType = $target->getEnergyType()->getName();
         $weakness = $target->getWeakness()->getWeaknessType();
-        $multiplierEnergyType = $target->getWeakness()->getRecistanceValue();
+        $multiplier = $target->getWeakness()->getRecistanceValue();
 
         $resistance = $target->getResistance()->getWeaknessType();
         $resistance = $target->getResistance()->getRecistanceValue();
 
         // If the weakness matches the energy type of the attacking Pokemon, the multiplier is used.
         if ($weakness == $energyType) {
-            $damage = $Attacks->getAttackDamage() * $multiplierEnergyType;
+            $damage = $Attacks->getAttackDamage() * $multiplier;
             echo "<p>" . $this->getPokemonName() . " valt aan met " . $Attacks->getAttackName() . "! Dit doet niet heel veel damage  <br>(" . $damage . " Damage) </br></p>";
         } // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
         elseif ($resistance == $energyType) {
@@ -68,7 +68,6 @@ class Pokemon
 
         $this->damageDone($damage, $target);
     }
-
     /**
      * Laat zien of de Pokemon dood is of hij laat zien hoeveel HP er nog over is.
      * @param int $damage
