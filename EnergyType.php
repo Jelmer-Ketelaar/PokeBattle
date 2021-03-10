@@ -13,7 +13,7 @@ class EnergyType
     /**
      * @return string $name
      */
-    public function getName()
+    public function getname()
     {
         return $this->name;
     }

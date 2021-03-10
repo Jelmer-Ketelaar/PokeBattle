@@ -1,6 +1,6 @@
 <?php
 
-class Resistance
+class resistance
 {
     private $name;
     private $value;
@@ -16,14 +16,14 @@ class Resistance
     /** Pakt de naam van de energy type
      * @return string $name
      */
-    public function getResistanceType()
+    public function getresistanceType()
     {
         return $this->name;
     }
     /** Pakt de value van de resistance
      * @return int $value
      */
-    public function getResistanceValue()
+    public function getresistanceValue()
     {
         return $this->value;
     }

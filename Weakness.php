@@ -1,6 +1,6 @@
 <?php
 
-class Weakness
+class weakness
 {
     private $name;
     private $multiplier;
@@ -16,14 +16,14 @@ class Weakness
     /** Pakt de naam van de energy type
      * @return string $name
      */
-    public function getWeaknessType()
+    public function getweaknessType()
     {
         return $this->name;
     }
     /** Pakt de value van de energy type die gebruikt wordt als multiplier
      * @return int $multiplier
      */
-    public function getWeaknessValue()
+    public function getweaknessValue()
     {
         return $this->multiplier;
     }

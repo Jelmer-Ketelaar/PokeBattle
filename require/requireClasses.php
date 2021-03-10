@@ -5,5 +5,5 @@ require "Pikachu.php";
 require "Charmeleon.php";
 require "EnergyType.php";
 require "Attacks.php";
-require "Weakness.php";
-require "Resistance.php";
+require "weakness.php";
+require "resistance.php";
