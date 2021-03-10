@@ -4,7 +4,6 @@ class Pokemon
 {
     //Creating the properties
     static $livingPokemons;
-    static $pokemons = [];
     public $name;
     public $energyType;
     public $hitPoints;
@@ -38,31 +37,31 @@ class Pokemon
 
     public function battleTurn($target, $attacks)
     {
-        $energyType = $target->getEnergyType()->getname();
-        $weaknessEnergyType = $target->getweakness()->getweaknessType();
-        $multiplierEnergyType = $target->getweakness()->getweaknessValue();
+        $energyType = $target->getEnergyType()->getName();
+        $weaknessEnergyType = $target->getWeakness()->getWeaknessType();
+        $multiplierEnergyType = $target->getWeakness()->getWeaknessValue();
 
-        $resistanceEnergyType = $target->getresistance()->getresistanceType();
-        $resistance = $target->getresistance()->getresistanceValue();
+        $resistanceEnergyType = $target->getResistance()->getResistanceType();
+        $resistance = $target->getResistance()->getResistanceValue();
 
         // If the weakness matches the energy type of the attacking Pokemon, the multiplier is used.
         if ($weaknessEnergyType == $energyType) {
-            $damage = $attacks->getAttackdamage() * $multiplierEnergyType;
-            echo "<p>" . $this->getPokemonByname() . " valt aan met " . $attacks->getAttackname() . "! Dit doet niet heel veel damage </p>";
+            $damage = $attacks->getAttackDamage() * $multiplierEnergyType;
+            echo "<p>" . $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " <p>" . $damage . " damage </p>";
         }
 
         // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
         elseif ($resistanceEnergyType == $energyType) {
-            $damage = $attacks->getAttackdamage() - $resistance;
-            echo "<p>" . $this->getPokemonByname() . " valt aan met " . $attacks->getAttackname() . "! Dit doet niet heel veel damage </p>";
+            $damage = $attacks->getAttackDamage() - $resistance;
+            echo "<p>" . $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " <p>" . $damage . " damage </p>";
         }
 
         // Shows the attack with the damage that has been done.
         else {
             $damage = $attacks->getAttackdamage();
-            echo $this->getPokemonByname() . " valt aan met " . $attacks->getAttackname() . "<p> " . $damage . " damage</p>";
+            echo $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "<p> " . $damage . " damage</p>";
         }
 
         $this->damageDone($damage, $target);
@@ -79,14 +78,14 @@ class Pokemon
         // Als de HP 0 is dan wordt er een Pokemon afgehaald
         $target->health -= $damage;
         if ($target->getHealth() <= 0) {
-            echo $target->getPokemonByname()  .  " Is verslagen!<br>";
+            echo $target->getPokemonByName()  .  " Is verslagen!<br>";
             self::$livingPokemons--;
         } elseif ($target->getHealth() <= 15) {
-            echo $target->getPokemonByname() . ' heeft nu nog maar ' . $target->getHealth() . " hp over!<br>";
+            echo $target->getPokemonByName() . ' heeft nu nog maar ' . $target->getHealth() . " hp over!<br>";
         }
         // Laat zien hoeveel HP er nog over is.
         else {
-            echo $target->getPokemonByname() . " heeft nu nog " . $target->getHealth() . " hp over!<br>";
+            echo $target->getPokemonByName() . " heeft nu nog " . $target->getHealth() . " hp over!<br>";
         }
     }
 
@@ -102,7 +101,7 @@ class Pokemon
     /**
      * @return string $name
      */
-    private function getPokemonByname()
+    private function getPokemonByName()
     {
         return $this->name;
     }
@@ -143,7 +142,7 @@ class Pokemon
     /**
      * @return mixed $weakness
      */
-    private function getweakness()
+    private function getWeakness()
     {
         return $this->weakness;
     }
@@ -151,7 +150,7 @@ class Pokemon
     /**
      * @return mixed $resistance
      */
-    private function getresistance()
+    private function getResistance()
     {
         return $this->resistance;
     }

@@ -2,26 +2,13 @@
   font-family: "Balsamiq Sans", cursive;
   margin-top: 2vh;
 }
-.col-3 {
-  background-color: orange;
-  border-radius: 10px;
-}
 
-#Charmeleon {
-  height: 70vh;
+.row {
+  margin-left: 3vw;
 }
 
 p {
   font-size: 17px;
-}
-
-.infoTitle {
-  margin-top: 2vh;
-}
-
-.information {
-  display: block;
-  top: 10vh;
 }
 
 .Title {
@@ -29,15 +16,25 @@ p {
   font-size: 50px;
 }
 
-.row {
-  margin-left: 2vw;
-}
-/*Image*/
+/* Information box */
 
-.Pikachu {
-  max-height: 50vh;
+.col-3 {
+  background-color: orange;
+  border-radius: 10px;
+  height: 70vh;
 }
 
-.Charmeleon {
+.information {
+  display: block;
+  top: 10vh;
+}
+
+.infoTitle {
+  margin-top: 2vh;
+}
+
+/* Image */
+
+.pokemonImage {
   max-height: 50vh;
 }

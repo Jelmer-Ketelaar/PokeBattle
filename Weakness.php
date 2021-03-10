@@ -16,14 +16,14 @@ class weakness
     /** Pakt de naam van de energy type
      * @return string $name
      */
-    public function getweaknessType()
+    public function getWeaknessType()
     {
         return $this->name;
     }
     /** Pakt de value van de energy type die gebruikt wordt als multiplier
      * @return int $multiplier
      */
-    public function getweaknessValue()
+    public function getWeaknessValue()
     {
         return $this->multiplier;
     }
