@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="">
+    <list default="true" id="c15c368d-f8b9-4234-a8c4-591087f32414" name="Default Changelist" comment="Deleted launch.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Charmeleon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Charmeleon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pikachu.php" beforeDir="false" afterPath="$PROJECT_DIR$/pikachu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,8 +131,24 @@
       <workItem from="1615451054749" duration="106000" />
       <workItem from="1615451169725" duration="2925000" />
       <workItem from="1615456560949" duration="1235000" />
-      <workItem from="1615457804869" duration="431000" />
+      <workItem from="1615457804869" duration="4068000" />
+      <workItem from="1615465445909" duration="1596000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed comments">
+      <created>1615458344311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615458344311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deleted launch.json">
+      <created>1615458425828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615458425828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,5 +168,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Changed comments" />
+    <MESSAGE value="Deleted launch.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted launch.json" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
