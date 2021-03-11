@@ -1,6 +1,6 @@
 <?php
 
-class Charmeleon extends Pokemon
+class Charmeleon extends Pokemon\Pokemon
 {
 
     public function __construct($name)

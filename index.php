@@ -2,6 +2,9 @@
 // Load all files
 require "require/requireClasses.php";
 
+/* Uses the class Pokemon in the namespace Pokemon */
+use Pokemon\Pokemon;
+
 //Here I bring the pokemons to life
 $pikachu = new Pikachu('Pikachu');
 $charmeleon = new Charmeleon('Charmeleon');
@@ -57,7 +60,7 @@ $charmeleon = new Charmeleon('Charmeleon');
             foreach ($charmeleon->attacks as $attack) {
             ?>
                 <p>
-                    <?php echo $attack->getAttackname(); ?>
+                    <?php echo $attack->getAttackName(); ?>
                 </p>
             <?php
             }

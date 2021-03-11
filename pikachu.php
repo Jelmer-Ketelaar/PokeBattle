@@ -1,6 +1,6 @@
 <?php
 
-class Pikachu extends Pokemon
+class Pikachu extends Pokemon\Pokemon
 {
     /** Constructor wordt uitgevoerd als er een nieuwe Pikachu class word aangemaakt.
      * @param string $name

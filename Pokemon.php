@@ -1,4 +1,10 @@
 <?php
+//Creating the namespace and calling it in my Pickachu and Charmeleon classes
+namespace Pokemon;
+// If a class is called if it has not already been called, the function does so automatically.
+spl_autoload_register(function ($class_name) {
+    include $class_name . '.php';
+});
 
 class Pokemon
 {
@@ -21,7 +27,7 @@ class Pokemon
      * @param mixed $resistance
      */
 
-    //Methods
+    // Declarte construct method which accepts six parameters
     protected function __construct($name, $energyType, $hitPoints, $attacks, $weakness, $resistance)
     {
         $this->name = $name;
@@ -78,7 +84,7 @@ class Pokemon
             self::$livingPokemons--;
         } elseif ($target->getHealth() <= 15) {
             echo $target->getPokemonByName() . ' heeft nu nog maar ' . $target->getHealth() . " hp over!<br>";
-        } // Laat zien hoeveel HP er nog over is.
+        } // Shows how much HP there is left
         else {
             echo $target->getPokemonByName() . " heeft nu nog " . $target->getHealth() . " hp over!<br>";
         }
@@ -86,7 +92,7 @@ class Pokemon
 
     //Creating all the functions
     /**
-     * @return int $amountOfPokemon
+     * @return int $livingPokemons
      */
     //Using self because it is a non object context and a static function
     public static function getPopulation()
@@ -119,7 +125,7 @@ class Pokemon
     }
 
     /**
-     * @return mixed $Attacks
+     * @return mixed $attacks
      */
     private function getAttack()
     {
@@ -152,7 +158,7 @@ class Pokemon
     }
 
     /**
-     * @return int $Health
+     * @return int $health
      */
     private function getHealth()
     {
