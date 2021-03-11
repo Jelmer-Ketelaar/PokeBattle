@@ -1,10 +1,10 @@
 <?php
-//Laad alle bestanden in
+// Load all files
 require "require/requireClasses.php";
 
 //Here I bring the pokemons to life
-$pikachu = new pikachu('Pikachu');
-$charmeleon = new charmeleon('Charmeleon');
+$pikachu = new Pikachu('Pikachu');
+$charmeleon = new Charmeleon('Charmeleon');
 
 ?>
 
