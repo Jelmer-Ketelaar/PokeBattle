@@ -1,40 +1,40 @@
 * {
-  font-family: "Balsamiq Sans", cursive;
-  margin-top: 2vh;
+    font-family: "Balsamiq Sans", cursive;
+    margin-top: 2vh;
 }
 
 .row {
-  margin-left: 3vw;
+    margin-left: 3vw;
 }
 
 p {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .Title {
-  text-align: center;
-  font-size: 50px;
+    text-align: center;
+    font-size: 50px;
 }
 
 /* Information box */
 
 .col-3 {
-  background-color: orange;
-  border-radius: 10px;
-  height: 70vh;
+    background-color: orange;
+    border-radius: 10px;
+    height: 70vh;
 }
 
 .information {
-  display: block;
-  top: 10vh;
+    display: block;
+    top: 10vh;
 }
 
 .infoTitle {
-  margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 /* Image */
 
 .pokemonImage {
-  max-height: 50vh;
+    max-height: 50vh;
 }

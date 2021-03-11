@@ -3,8 +3,8 @@
 require "require/requireClasses.php";
 
 //Here I bring the pokemons to life
-$pikachu = new Pikachu('Pikachu');
-$charmeleon = new Charmeleon('Charmeleon');
+$pikachu = new pikachu('Pikachu');
+$charmeleon = new charmeleon('Charmeleon');
 
 ?>
 
@@ -64,7 +64,7 @@ $charmeleon = new Charmeleon('Charmeleon');
             ?>
             <h3 class="infoTitle">Fight:</h3>
             <?php
-            $pikachu->battleTurn($charmeleon, $pikachu->getAttackByname('Electric Ring'));
+            $pikachu->battleTurn($charmeleon, $pikachu->getAttackByName('Electric Ring'));
 
             ?>
 
@@ -110,7 +110,7 @@ $charmeleon = new Charmeleon('Charmeleon');
             } ?>
             <h3 class="infoTitle">Fight:</h3>
             <?php
-            $charmeleon->battleTurn($pikachu, $charmeleon->getAttackByname('Flare'));
+            $charmeleon->battleTurn($pikachu, $charmeleon->getAttackByName('Flare'));
             ?>
         </div>
     </div>

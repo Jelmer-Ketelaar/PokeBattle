@@ -12,7 +12,7 @@ class Pokemon
     public $resistance;
 
     /**
-     * Constructor die gebruikt wordt om een Pokemon object aan te maken
+     * Constructor used to create a Pokemon object
      * @param string $name
      * @param mixed $energyType
      * @param int $hitPoints
@@ -21,9 +21,9 @@ class Pokemon
      * @param mixed $resistance
      */
 
+    //Methods
     protected function __construct($name, $energyType, $hitPoints, $attacks, $weakness, $resistance)
     {
-        //Methods
         $this->name = $name;
         $this->energyType = $energyType;
         $this->hitPoints = $hitPoints;
@@ -31,7 +31,7 @@ class Pokemon
         $this->attacks = $attacks;
         $this->weakness = $weakness;
         $this->resistance = $resistance;
-        // Verhoogt de levende pokemons met 1 elke keer als de constructor word uitgevoerd.
+        //Increases the  livingPokemons by 1, each time the constructor is executed.
         self::$livingPokemons++;
     }
 
@@ -49,16 +49,12 @@ class Pokemon
             $damage = $attacks->getAttackDamage() * $multiplierEnergyType;
             echo "<p>" . $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " <p>" . $damage . " damage </p>";
-        }
-
-        // Als de resistance overeenkomt met de energytupe dan word de resistance afgetrokken van de attackdamage.
+        } // If the resistance matches the energy type, the resistance is subtracted from the attack damage.
         elseif ($resistanceEnergyType == $energyType) {
             $damage = $attacks->getAttackDamage() - $resistance;
             echo "<p>" . $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "! Dit doet niet heel veel damage </p>";
             echo " <p>" . $damage . " damage </p>";
-        }
-
-        // Shows the attack with the damage that has been done.
+        } // Shows the attack with the damage that has been done.
         else {
             $damage = $attacks->getAttackdamage();
             echo $this->getPokemonByName() . " valt aan met " . $attacks->getAttackName() . "<p> " . $damage . " damage</p>";
@@ -75,20 +71,20 @@ class Pokemon
 
     public function damageDone($damage, $target)
     {
-        // Als de HP 0 is dan wordt er een Pokemon afgehaald
+        // If the HP is 0 then a Pokemon is taken from it
         $target->health -= $damage;
         if ($target->getHealth() <= 0) {
-            echo $target->getPokemonByName()  .  " Is verslagen!<br>";
+            echo $target->getPokemonByName() . " Is verslagen!<br>";
             self::$livingPokemons--;
         } elseif ($target->getHealth() <= 15) {
             echo $target->getPokemonByName() . ' heeft nu nog maar ' . $target->getHealth() . " hp over!<br>";
-        }
-        // Laat zien hoeveel HP er nog over is.
+        } // Laat zien hoeveel HP er nog over is.
         else {
             echo $target->getPokemonByName() . " heeft nu nog " . $target->getHealth() . " hp over!<br>";
         }
     }
 
+    //Creating all the functions
     /**
      * @return int $amountOfPokemon
      */
@@ -130,7 +126,7 @@ class Pokemon
         return $this->attacks;
     }
 
-    public function getAttackByname($name)
+    public function getAttackByName($name)
     {
         foreach ($this->attacks as $attack) {
             if ($attack->name == $name) {
