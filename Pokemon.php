@@ -10,12 +10,12 @@ class Pokemon
 {
     //Creating the properties
     static $livingPokemons;
-    public $name;
-    public $energyType;
-    public $hitPoints;
+    private $name;
+    private $energyType;
+    private $hitPoints;
     public $attacks;
-    public $weakness;
-    public $resistance;
+    private $weakness;
+    private $resistance;
 
     /**
      * Constructor used to create a Pokemon object
@@ -103,7 +103,7 @@ class Pokemon
     /**
      * @return string $name
      */
-    private function getPokemonByName()
+    public function getPokemonByName()
     {
         return $this->name;
     }
@@ -111,7 +111,7 @@ class Pokemon
     /**
      * @return string $energyType
      */
-    private function getEnergyType()
+    public function getEnergyType()
     {
         return $this->energyType;
     }
@@ -119,7 +119,7 @@ class Pokemon
     /**
      * @return int $hitPoints
      */
-    private function getHitpoints()
+    public function getHitpoints()
     {
         return $this->hitPoints;
     }
@@ -127,7 +127,7 @@ class Pokemon
     /**
      * @return mixed $attacks
      */
-    private function getAttack()
+    public function getAttack()
     {
         return $this->attacks;
     }
@@ -144,7 +144,7 @@ class Pokemon
     /**
      * @return mixed $weakness
      */
-    private function getWeakness()
+    public function getWeakness()
     {
         return $this->weakness;
     }
@@ -152,7 +152,7 @@ class Pokemon
     /**
      * @return mixed $resistance
      */
-    private function getResistance()
+    public function getResistance()
     {
         return $this->resistance;
     }
@@ -160,7 +160,7 @@ class Pokemon
     /**
      * @return int $health
      */
-    private function getHealth()
+    public function getHealth()
     {
         return $this->health;
     }

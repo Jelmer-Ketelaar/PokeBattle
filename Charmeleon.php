@@ -16,4 +16,5 @@ class Charmeleon extends Pokemon\Pokemon
 
         parent::__construct($name, $EnergyType, $hitPoints, $attacks, $weakness, $resistance);
     }
+
 }
